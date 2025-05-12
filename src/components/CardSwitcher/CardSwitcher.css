@@ -1,0 +1,26 @@
+.buttonSwitch {
+  width: 80px; 
+  height: 80px;
+  background-size: cover; 
+  border: none; 
+  cursor: pointer;
+  opacity: 0.8;
+}
+.buttonSwitch:hover {
+  opacity: 1;
+}
+.cardSwitcher{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.switchWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftImg {
+  width: 130px;
+  height: auto;
+}

@@ -1,0 +1,58 @@
+table {
+  width: 90%;
+  border-collapse: collapse; 
+  margin: 20px 20px; 
+  font-family: Arial, sans-serif; 
+}
+
+
+th {
+  background-color: #5ec562; 
+  color: white; 
+  padding: 12px; 
+  text-align: left; 
+}
+
+
+td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+}
+
+tr:hover {
+  background-color: #f1f1f1; 
+}
+
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.tableButtons {
+  background-color: #008CBA; 
+  color: white;
+  border: none;
+  padding: 8px 12px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 4px;
+}
+
+
+.tableButtons:hover {
+  background-color: #2b484e; 
+}
+.tableButtonDelete {
+  background-color: rgb(236, 124, 124);
+}
+
+.tableButtonSave{
+  background-color: #4CAF50;
+}
+.tableButtonCancel{
+  background-color: rgb(226, 27, 103)
+}

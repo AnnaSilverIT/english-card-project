@@ -1,0 +1,25 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; 
+  height: 30px;
+}
+
+.search-bar__button {
+  background-color: #A5D6A7 ;
+  border: none;
+  border-radius: 0 4px 4px 0; 
+  padding: 10px; 
+  cursor: pointer;
+  height: 50px;
+}
+
+.search-bar__icon {
+  font-size: 16px; /* Размер иконки */
+}

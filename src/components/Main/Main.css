@@ -1,0 +1,17 @@
+.addWordButton{
+    background-color: #a3e459; 
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 13px 15px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    margin: 10px; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
+
+.addWordButton:hover {
+  background-color: #87e21f;
+}
