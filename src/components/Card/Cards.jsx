@@ -8,25 +8,23 @@ const Card = ({word, transcription, translation, incrementWordsLearned, translat
     incrementWordsLearned(); 
     setIsTranslateVisible(true);
   };
-  
-  useEffect(() => {
-    if (!isTranslateVisible && translateButtonRef.current) {
-      translateButtonRef.current.focus();
-    }
-  }, [isTranslateVisible]);
+    useEffect(() => {
+      if (!isTranslateVisible && translateButtonRef?.current) {
+        translateButtonRef.current.focus();
+      }
+    }, [isTranslateVisible]);
   return (
     <div className={classNames('card')}>
       <p className="card__word">{word}</p>
       <p className='card__transcription'>{transcription}</p>
-      {!isTranslateVisible && (
-        <button ref={translateButtonRef} className='card__button' onClick={showTranslate}>Показать перевод</button>
-      )}
-      {isTranslateVisible && (
+      {isTranslateVisible ? (
         <div>
           <p className='card__translation'>{translation}</p>
           <button className='card__button' onClick={() => setIsTranslateVisible(false)}>Скрыть перевод</button>
         </div>
-      )}
+        ) : (
+        <button ref={translateButtonRef} className='card__button' onClick={showTranslate}>Показать перевод</button>
+        )}
     </div>
   );
 };

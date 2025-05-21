@@ -28,11 +28,11 @@ function CardSwitcher ({props}) {
   };
 
   useEffect(() => {
-    if (translateButtonRef.current) {
-      translateButtonRef.current.focus();
-    }
     setIsTranslateVisible(false);
-  }, [currentIndex]);
+    if (translateButtonRef?.current) {
+    translateButtonRef.current.focus();
+    }
+    }, [currentIndex])
   return (
     <div className='cardSwitcher'>
       <div className='switchWrapper'>

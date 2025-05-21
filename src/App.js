@@ -11,7 +11,7 @@ import {BrowserRouter as Router,Routes, Route, Link} from "react-router-dom";
 function App() {
   return (
     <Router>
-    <div className="App">
+      <div className="App">
       <Header />
       <div className="navBarWrapper">
       <nav>
@@ -26,9 +26,9 @@ function App() {
         </nav>
       </div>
         <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/cards" element={<CardSwitcher />} />
-        <Route path="*" element={<ErrorPage />} /> 
+          <Route path="/" element={<Main />} />
+          <Route path="/cards" element={<CardSwitcher />} />
+          <Route path="*" element={<ErrorPage />} /> 
       </Routes>
     <Footer />
     </div>
